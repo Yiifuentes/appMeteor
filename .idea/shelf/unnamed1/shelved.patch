@@ -1,0 +1,13 @@
+Index: server/main.js
+===================================================================
+--- server/main.js	(date 1516916150000)
++++ server/main.js	(date 1516916150000)
+@@ -1,8 +0,0 @@
+-import { Meteor } from 'meteor/meteor';
+-import productsData from './insertData';
+-
+-Meteor.startup(() => {
+-  // code to run on server at startup
+-    productsData();
+-
+-});

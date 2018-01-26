@@ -1,0 +1,80 @@
+Index: client/components/ProductComponent.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React, { PropTypes } from 'react'\n\nexport default class Product extends React.Component {\n  render() {\n    const { price, inventory, title, onAddToCart } = this.props;\n    return (\n      <div>\n        <span> {title} - &#36;{price} {inventory ? `Current inventory ${inventory}` : null} </span>\n        <button onClick={onAddToCart}>\n          Add To Cart\n        </button>\n      </div>\n    )\n  }\n}\n\nProduct.propTypes = {\n\n  price: PropTypes.number,\n  inventory: PropTypes.number,\n  title: PropTypes.string,\n  onAddToCart: PropTypes.func\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- client/components/ProductComponent.js	(date 1516916150000)
++++ client/components/ProductComponent.js	(date 1479262390000)
+@@ -15,7 +15,6 @@
+ }
+ 
+ Product.propTypes = {
+-
+   price: PropTypes.number,
+   inventory: PropTypes.number,
+   title: PropTypes.string,
+Index: client/main.css
+===================================================================
+--- client/main.css	(date 1516916150000)
++++ client/main.css	(date 1516916150000)
+@@ -1,1 +0,0 @@
+-/* CSS declarations go here */
+Index: client/main.html
+===================================================================
+--- client/main.html	(date 1516916150000)
++++ client/main.html	(date 1516916150000)
+@@ -1,25 +0,0 @@
+-<head>
+-  <title>appMeteor</title>
+-</head>
+-
+-<body>
+-  <h1>Welcome to Meteor!</h1>
+-
+-  {{> hello}}
+-  {{> info}}
+-</body>
+-
+-<template name="hello">
+-  <button>Click Me</button>
+-  <p>You've pressed the button {{counter}} times.</p>
+-</template>
+-
+-<template name="info">
+-  <h2>Learn Meteor!</h2>
+-  <ul>
+-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+-  </ul>
+-</template>
+Index: client/main.js
+===================================================================
+--- client/main.js	(date 1516916150000)
++++ client/main.js	(date 1516916150000)
+@@ -1,22 +0,0 @@
+-import { Template } from 'meteor/templating';
+-import { ReactiveVar } from 'meteor/reactive-var';
+-
+-import './main.html';
+-
+-Template.hello.onCreated(function helloOnCreated() {
+-  // counter starts at 0
+-  this.counter = new ReactiveVar(0);
+-});
+-
+-Template.hello.helpers({
+-  counter() {
+-    return Template.instance().counter.get();
+-  },
+-});
+-
+-Template.hello.events({
+-  'click button'(event, instance) {
+-    // increment the counter when button is clicked
+-    instance.counter.set(instance.counter.get() + 1);
+-  },
+-});
