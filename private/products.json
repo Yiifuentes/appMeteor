@@ -35,4 +35,10 @@
   "price": 28.97,
   "inventory": 20,
   "department": "music"
+}, {
+  "id": 7,
+  "title": "Appetite for info MUSIC (Vinyl)",
+  "price": 28.97,
+  "inventory": 20,
+  "department": "music"
 }]

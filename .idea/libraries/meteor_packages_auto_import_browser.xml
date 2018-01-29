@@ -99,6 +99,8 @@
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.19/web.browser/logging.js" />
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.19/web.browser/logging_cordova.js" />
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.19/web.browser/logging_test.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/markdown/1.0.12/web.browser/showdown.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/markdown/1.0.12/web.browser/template-integration.js" />
         <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.9.1/web.browser/.npm/package/node_modules/install/install.js" />
         <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.9.1/web.browser/client.js" />
         <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.9.1/web.browser/options.js" />
@@ -623,6 +625,8 @@
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.19/web.browser/logging.js" />
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.19/web.browser/logging_cordova.js" />
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.19/web.browser/logging_test.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/markdown/1.0.12/web.browser/showdown.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/markdown/1.0.12/web.browser/template-integration.js" />
       <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.9.1/web.browser/.npm/package/node_modules/install/install.js" />
       <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.9.1/web.browser/client.js" />
       <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.9.1/web.browser/options.js" />
